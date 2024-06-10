@@ -2,23 +2,36 @@
 
 public class q5 {
     public static void main(String[] args) {
-        int arr[] = {1,3,2,6,5};
-        int n=arr.length;
+        int arr1[] = {1,3,2,6,5};
+        int n1=arr1.length;
+        int peak1 =0;
+        int arr2[] = {14,7,3,2,6,5};
+        int n2=arr2.length;
+        int peak2 =0;
 
 
-        for(int i=0;i<n;i++){
+        for(int i=1;i<n1;i++){
           
-                if(arr[i]>arr[i-1] && arr[i]>arr[i+1]){
+                if(arr1[i]>arr1[i-1] && arr1[i]>arr1[i+1]){
                 
-                System.out.println("Peaked Element " + arr[i]);
+                peak1 = arr1[i];
                 
-                
-                
-                
-
             }
             
         }
+        System.out.println("Peaked element is " + peak1);
+
+
+        for(int i=1;i<n2;i++){
+          
+                if(arr2[i]>arr2[i-1] && arr2[i]>arr2[i+1]){
+                
+                peak2 = arr2[i];
+                
+            }
+            
+        }
+        System.out.println("Peaked element is " + peak2);
        
        
     }

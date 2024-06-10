@@ -1,32 +1,27 @@
-import java.util.Scanner;
-
-
 public class q3 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        int[] arr1 ={34,21,54,65,43};
+        int[] arr2 ={4,3,6,7,1};
 
-        System.out.println("No. of elements in array :");
-        int n = sc.nextInt();
+        int n1=arr1.length;
+        int n2=arr2.length;
 
-        System.out.println("Array is :");
+        int max1 = arr1[0];
+        int max2 = arr2[0];
 
-        int arr[] = new int[n];
-
-        for(int i=0;i<n;i++){
-            arr[i]=sc.nextInt();
-        }
-
-        
-        for(int i=0;i<n;i++){
-            for(int j =i+1; j<n;j++){
-                if( arr[i] > arr[j]){
-                    
-                }
-                
-
+        for(int i=0;i<n1;i++){
+            if(arr1[i]>max1){
+                max1=arr1[i];
             }
         }
-        System.out.println(arr[i]);
+        for(int i=0;i<n2;i++){
+            if(arr2[i]>max2){
+                max2=arr2[i];
+            }
+        }
+        System.out.println("Largest element in array 1 : " + max1);
+        System.out.println("Largest element in array 2 : " + max2);
     }
+
     
 }
